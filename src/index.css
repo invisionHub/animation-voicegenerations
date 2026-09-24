@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Brand Core - Professional Cobalt & Navy Studio Blue */
+    --brand-primary: #1d4ed8;
+    --brand-accent: #2563eb;
+    --brand-hover: #1e40af;
+    --brand-subtle: #eff6ff;
+    --brand-light: #dbeafe;
+
+    /* Surfaces */
+    --surface: #ffffff;
+    --surface-muted: #f8fafc;
+    --surface-subtle: #f1f5f9;
+    --surface-elevated: #ffffff;
+
+    /* Borders */
+    --border: #e2e8f0;
+    --border-strong: #cbd5e1;
+    --border-subtle: #f1f5f9;
+
+    /* Typography */
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #64748b;
+    --text-light: #94a3b8;
+
+    /* Semantic States */
+    --success: #059669;
+    --success-subtle: #ecfdf5;
+    --warning: #d97706;
+    --warning-subtle: #fffbeb;
+    --error: #dc2626;
+    --error-subtle: #fef2f2;
+    --info: #0284c7;
+    --info-subtle: #f0f9ff;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-primary);
+    background-color: var(--surface-muted);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom compact scrollbar for timeline and studio inspector */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Studio Timeline Slider */
+input[type="range"].timeline-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"].timeline-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #2563eb;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  cursor: grab;
+}
+
+input[type="range"].timeline-slider::-webkit-slider-thumb:active {
+  cursor: grabbing;
+}

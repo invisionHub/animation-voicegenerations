@@ -1,0 +1,6 @@
+{
+  "name": "BlueStudio — Animation & Voice Studio",
+  "description": "Professional creative studio for natural-language asset animation, independent clip rendering, and synchronized narration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
